@@ -100,15 +100,18 @@ Sprint 1 (8 days)
 	--- 
 	![Login Screen](screenshots/login.jpg)
 	---
+  
   **Validations**	
 	--- 
 	![Validations](screenshots/validations.jpg)
 	---
+  
   **Invalid Quiz Password **	
 	--- 
 	![Invalid Quiz Password ](screenshots/invalidpass.jpg)
 	---
-	**Question Screen 1**	
+	
+  **Question Screen 1**	
 	--- 
 	![Home Screen](screenshots/questions1.jpg)
 	---
@@ -122,6 +125,7 @@ Sprint 1 (8 days)
 	--- 
 	![Result Page](screenshots/result-page.jpg)
 	---
+  
 	**Leaderboard** 
 	--- 
 	![Leaderboard](screenshots/leaderboard.jpg)
