@@ -121,12 +121,13 @@ Sprint 1 (8 days)
 	![Home Screen](screenshots/questions2.jpg)
 	---
   
-	**Result Page**
+  **Result Page**	
 	--- 
 	![Result Page](screenshots/result-page.jpg)
 	---
   
-	**Leaderboard** 
+  **Leaderboard**	
 	--- 
 	![Leaderboard](screenshots/leaderboard.jpg)
 	---
+  
