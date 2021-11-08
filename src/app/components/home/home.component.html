@@ -1,0 +1,24 @@
+<div class="container-fluid mt-2">
+    <form></form>
+      <table class="table">
+        <thead  *ngFor="let q of questions">
+          <tr class="thead-dark">
+            <th scope="col">Q {{q.id}} &nbsp;&nbsp; {{q.question}}</th>
+          </tr>
+          <tr *ngFor="let o of q.options; let i=index">
+            <th scope="row">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <input type="radio" name="ques{{q.id}}" id="{{o}}" value="{{o}}" (change)="answerChanged(q.id,$event)" >
+                  </div>
+                </div>
+                <label class="form-check-label ml-2" for="{{o}}">  {{o}} </label>
+              </div>
+            </th>
+          </tr>
+        </thead>
+        
+    <button class="btn btn-primary btn-block mt-2" (click)="onSubmit()">Submit</button>
+    </table>
+</div>

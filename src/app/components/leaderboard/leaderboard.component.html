@@ -1,0 +1,22 @@
+<div class="container">
+  <table class="table mt-5">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">Email</th>
+        <th scope="col">Score</th>
+        <th scope="col">Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let u of users">
+        <th>{{u.id}}</th>
+        <td>{{u.username}}</td>
+        <td>{{u.email}}</td>
+        <td>{{u.score}} %</td>
+        <td ><span class="{{(u.score>=60)?'badge badge-success':'badge badge-danger'}} ml-2"> {{ (u.score>=60)?'PASS':'FAIL' }} </span>  </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

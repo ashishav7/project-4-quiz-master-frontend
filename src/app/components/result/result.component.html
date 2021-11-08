@@ -1,0 +1,21 @@
+<div class="container mt-3" style="text-align: center;">
+    <h3 style="color: dodgerblue; text-align: center;">  Hi {{userService.getUsername()}}, Your score is {{score}}/{{numberOfQuestions}} </h3>
+    <h2 [style.color] = "(correctPerc>=60)?'green':'red'">{{ (correctPerc>=60)? 'PASS': 'FAIL'}}</h2>
+    <small [style.color] = "(correctPerc>=60)?'green':'red'">{{(correctPerc>=60)?'Congratulations You have passed the test & your score is ' + score + '/' + numberOfQuestions: 'Work Hard for next time'}}</small>
+</div>
+
+
+<div class="container progress nopad" style="height: 25px;">
+    <div class="progress-bar bg-success" role="progressbar" [style.width]= "correctPerc + '%'" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">Correct {{score}}</div>
+    <div class="progress-bar bg-info" role="progressbar" [style.width]= "unansweredPerc + '%'" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">No answer {{unAnsweredQuestions}}</div>
+    <div class="progress-bar bg-danger" role="progressbar" [style.width]= "incorrectPerc + '%'" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">Wrong {{wrongQuestions}}</div>
+</div>
+<br>
+<div class="container progress nopad" style="height: 35px;">
+    <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" [style.width]= "totquesperc + '%'">Total Questions({{numberOfQuestions}}) </div>
+</div>
+
+<div class="container mt-4" style="text-align:center;">
+    <a routerLink="/leaderboard" class="btn btn-primary mr-2">Go to Leaderboard</a>
+    <a routerLink="/login" class="btn btn-primary">Exit</a>
+</div>
